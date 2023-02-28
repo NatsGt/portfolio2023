@@ -1,57 +1,49 @@
 @use "../variables/" as *;
 
 .frontpage {
-  height: 100vh;
-  background-color: $blue-900;
+  height: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  &__data {
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  align-items: flex-start;
+  color: white;
+  gap: 0.5rem;
+  h1,
+  h2 {
+    font-family: $font-montserrat;
     color: white;
-    gap: 0.5rem;
-    h1,
-    h2 {
-      font-family: $font-montserrat;
-      color: white;
-      font-weight: 900;
-    }
-    h1 {
-      font-size: 75px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-    p {
-      font-family: $font-work;
-      font-size: 20px;
-      font-weight: 300;
-    }
+    font-weight: 900;
   }
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  div {
+    font-family: $font-work;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
 
-  .contactIcons {
+.contactIcons {
+  display: flex;
+  gap: 1rem;
+
+  .contact {
+    padding: 0.5rem;
     display: flex;
-    gap: 1rem;
-
-    .contact {
-      padding: 0.5rem;
-      display: flex;
-      align-items: center;
-      border: 2px solid $pink-500;
-      border-radius: 50%;
-      &:hover {
-        background-color: white;
-        border: 2px solid white;
-        cursor: pointer;
-        svg {
-          color: $pink-700;
-        }
+    align-items: center;
+    border: 2px solid $pink-500;
+    border-radius: 50%;
+    &:hover {
+      background-color: white;
+      border: 2px solid white;
+      cursor: pointer;
+      svg {
+        color: $pink-700;
       }
     }
   }

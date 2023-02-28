@@ -1,0 +1,17 @@
+@use "./variables/" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.basicSubtitle {
+  color: $pink-400;
+  font-family: $font-montserrat;
+  font-size: 50px;
+}

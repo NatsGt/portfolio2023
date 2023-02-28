@@ -2,6 +2,7 @@ import Head from "next/head"
 import styles from "@/styles/Home.module.scss"
 import FrontPage from "@/components/landing/home"
 import data from "@/utils/aboutMe"
+import Skills from "@/components/landing/Skills"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <FrontPage description={data.briefDescription} contact={data.contact} />
+        <Skills description={data.skillsDescription} skills={data.skills} />
       </main>
     </>
   )

@@ -11,7 +11,7 @@ export type Contacts = {
   description: string
 }
 
-type Skills = {
+export type Skills = {
   id: number
   name: string
 }
@@ -36,6 +36,19 @@ type MyData = {
   skills: Skills[]
   projectsSummary: string
   projects: Projects[]
+}
+
+export enum Skill {
+  HTML = "html",
+  CSS = "css",
+  SASS = "sass",
+  TYPESCRIPT = "typescript",
+  JAVASCRIPT = "javascript",
+  NODE = "nodejs",
+  REACT = "react",
+  GITHUB = "github",
+  SQL = "sql",
+  NEXT = "next",
 }
 
 const data: MyData = {
@@ -72,37 +85,37 @@ const data: MyData = {
   skills: [
     {
       id: 1,
-      name: "Html",
+      name: Skill.HTML,
     },
-    { id: 2, name: "Css" },
-    { id: 3, name: "Sass" },
+    { id: 2, name: Skill.CSS },
+    { id: 3, name: Skill.SASS },
     {
       id: 4,
-      name: "Typescript",
+      name: Skill.JAVASCRIPT,
     },
     {
       id: 5,
-      name: "Javascript (ES6)",
+      name: Skill.TYPESCRIPT,
     },
     {
       id: 6,
-      name: "NodeJs",
+      name: Skill.NODE,
     },
     {
       id: 7,
-      name: "MySql",
+      name: Skill.REACT,
     },
     {
       id: 8,
-      name: "React",
+      name: Skill.GITHUB,
     },
     {
       id: 9,
-      name: "GitHub",
+      name: Skill.SQL,
     },
     {
       id: 10,
-      name: "Redux",
+      name: Skill.NEXT,
     },
   ],
   projectsSummary:

@@ -3,6 +3,7 @@ import styles from "../../styles/components/frontpage.module.scss"
 import { Icon } from "../icons"
 import { IconDatadog, IconGithub, IconLinkedin, IconMail } from "../icons/icons"
 import Link from "next/link"
+import PageContainer from "../PageContainer"
 
 type FrontPageProps = {
   description: string
@@ -24,8 +25,8 @@ const FrontPage: React.FC<FrontPageProps> = ({ description, contact }) => {
   }
 
   return (
-    <div id="home" className={styles.frontpage}>
-      <div className={styles.frontpage__data}>
+    <PageContainer id="home" background="dark">
+      <div className={styles.frontpage}>
         <div className={styles.contactIcons}>
           {contact.map((item) => (
             <Link
@@ -42,7 +43,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ description, contact }) => {
         <h2>Front-End Developer</h2>
         <div>{description}</div>
       </div>
-    </div>
+    </PageContainer>
   )
 }
 

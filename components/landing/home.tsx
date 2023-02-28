@@ -40,7 +40,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ description, contact }) => {
         </div>
         <h1>Natalia Rodas</h1>
         <h2>Front-End Developer</h2>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </div>
   )

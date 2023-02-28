@@ -16,22 +16,22 @@ const Navigation = () => {
       <ul className={styles.linksContainer}>
         <li className={styles.links}>
           <Link href="#about" legacyBehavior>
-            <a>About</a>
+            About
           </Link>
         </li>
         <li className={styles.links}>
           <Link href="#skills" legacyBehavior>
-            <a>Skills</a>
+            Skills
           </Link>
         </li>
         <li className={styles.links}>
           <Link href="#projects" legacyBehavior>
-            <a>Projects</a>
+            Projects
           </Link>
         </li>
         <li className={styles.links}>
           <Link href="#contact" legacyBehavior>
-            <a>Contact</a>
+            Contact
           </Link>
         </li>
       </ul>

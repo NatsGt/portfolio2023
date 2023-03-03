@@ -1,0 +1,11 @@
+@use "../variables/" as *;
+
+.about {
+  width: 70%;
+  h2 {
+    color: $pink-400;
+  }
+  p {
+    margin-top: 1rem;
+  }
+}

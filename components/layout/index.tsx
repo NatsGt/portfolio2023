@@ -8,7 +8,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Navigation />
-      <body>{children}</body>
+      <div>{children}</div>
     </>
   )
 }

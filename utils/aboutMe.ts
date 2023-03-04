@@ -55,7 +55,7 @@ const data: MyData = {
   name: "Natalia Rodas",
   location: "Sydhavn, Copenhaguen, Denmark",
   briefDescription:
-    "I’m a Front End Developer based in Copenhaguen, Denmark. I’m passionate about web development, technology, and coding. I have a slight obsession with logic and challenges. ",
+    "It's me, hi, I'm the Front-End, it's me. I'm passionate about web development, technology, and coding. I have a slight obsession with logic, challenges, and a bit of pop culture.",
   aboutMe:
     "I am a highly curious and cheerful person with a strong enthusiasm for technology and coding. I began my journey in web development through self-study and eventually received professional certification. My love for programming and staying current with new technology led me to pursue a Master's degree in Software Design at ITU, where I hope to gain a deeper understanding of the IT field.",
   skillsDescription:

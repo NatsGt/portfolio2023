@@ -55,9 +55,9 @@ const data: MyData = {
   name: "Natalia Rodas",
   location: "Sydhavn, Copenhaguen, Denmark",
   briefDescription:
-    "It's me, hi, I'm the Front-End, it's me. I'm passionate about web development, technology, and coding. I have a slight obsession with logic, challenges, and a bit of pop culture.",
+    "I'm all about web development, technology, and coding - I could talk about it for hours. And when it comes to logic and challenges, well, let's just say I'm a bit obsessed. Whether it's troubleshooting code or tackling a tricky problem, I'm always up for a good challenge.",
   aboutMe:
-    "I am a highly curious and cheerful person with a strong enthusiasm for technology and coding. I began my journey in web development through self-study and eventually received professional certification. My love for programming and staying current with new technology led me to pursue a Master's degree in Software Design at ITU, where I hope to gain a deeper understanding of the IT field.",
+    "I'm an enthusiastic, curious, and easygoing person, and I'm also a web developer! I started as a self-taught dev and got a Frontend Developer certificate from Hack Your Future. I fell in love with coding and new technologies, and now I'm studying for a master's in Software Design at ITU. My goal is to become a super knowledgeable IT expert, so that I can make cool stuff and change the world one line of code at a time! Oh, and did I mention my love for pop culture? From classic movies to the latest memes, I'm always in the know.",
   skillsDescription:
     "I started as a self-taught developer on several online platforms and built some basic projects (cloning responsive websites). Afterward, I got into the Hack Your Future program where I got my Front End Developer certificate. Since then, I’ve been working with projects based on Javascript, NodeJs, React, MySql, KnexJs, Git, Sass, Redux, and other several libraries. I'm always looking for new projects that help me dig more into these technologies and I'm looking forward to new and challenges.",
   contactSummary:
@@ -97,10 +97,10 @@ const data: MyData = {
       id: 5,
       name: Skill.TYPESCRIPT,
     },
-    {
-      id: 6,
-      name: Skill.NODE,
-    },
+    // {
+    //   id: 6,
+    //   name: Skill.NODE,
+    // },
     {
       id: 7,
       name: Skill.REACT,

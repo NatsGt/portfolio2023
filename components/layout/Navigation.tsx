@@ -6,13 +6,6 @@ import Link from "next/link"
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
-      <div>
-        <div className={styles.logoContainer}>
-          <Link href="#home">
-            <Image src="/images/natsgt-color.png" fill alt="NatsGt logo" />
-          </Link>
-        </div>
-      </div>
       <ul className={styles.linksContainer}>
         <li className={styles.links}>
           <Link href="#about" legacyBehavior>

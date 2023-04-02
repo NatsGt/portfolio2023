@@ -10,7 +10,7 @@ const About: React.FC<AboutProps> = ({ description }) => {
     <PageContainer background="light" id="about">
       <div className={`${styles.about} basicDescription`}>
         <h2 className="basicSubtitle">About</h2>
-        <p>{description}</p>
+        <p className="basicDescription">{description}</p>
       </div>
     </PageContainer>
   )

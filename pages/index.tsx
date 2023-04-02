@@ -5,6 +5,8 @@ import data from "@/utils/aboutMe"
 import Skills from "@/components/landing/Skills"
 import About from "@/components/landing/About"
 import Contact from "@/components/landing/Contact"
+import ContactSticky from "@/components/ContactSticky"
+import Projects from "@/components/landing/Projects"
 
 export default function Home() {
   return (
@@ -19,7 +21,9 @@ export default function Home() {
         <FrontPage description={data.briefDescription} contact={data.contact} />
         <About description={data.aboutMe} />
         <Skills description={data.skillsDescription} skills={data.skills} />
+        <Projects />
         <Contact contacts={data.contact} description={data.contactSummary} />
+        <ContactSticky contacts={data.contact} />
       </main>
     </>
   )

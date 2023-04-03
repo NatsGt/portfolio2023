@@ -15,9 +15,9 @@ const ProjectCard: React.FC<ProjectProp> = ({ data }) => {
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
         <Image
-          src={"/images/wult_website.png"}
+          src={`/images${data.image}`}
           fill
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "cover" }}
           alt="Image of Wult website"
         />
       </div>

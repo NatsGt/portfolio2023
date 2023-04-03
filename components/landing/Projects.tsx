@@ -1,5 +1,7 @@
 import { Project } from "@/utils/aboutMe"
 import PageContainer from "../PageContainer"
+import styles from "../../styles/components/projects.module.scss"
+import Carousel from "../carousel"
 import ProjectCard from "./Project"
 
 interface ProjectsProps {
@@ -11,11 +13,12 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
     <PageContainer background="light" id="projects">
       <div>
         <h2 className="basicSubtitle">Projects</h2>
-        <div>
-          {/* {data.map((item) => (
-            <ProjectCard data={item} key={item.id} />
-          ))} */}
-          <ProjectCard data={data[0]} />
+        <div className={styles.projectContainer}>
+          <Carousel>
+            {data.map((item, index) => (
+              <ProjectCard data={item} key={index} />
+            ))}
+          </Carousel>
         </div>
       </div>
     </PageContainer>

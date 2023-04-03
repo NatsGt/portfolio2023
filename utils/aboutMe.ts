@@ -53,6 +53,7 @@ export type Project = {
   links: ProjectLink[]
   technologies: Skill[]
   inProgress?: boolean
+  image: string
 }
 
 export enum Skill {
@@ -152,6 +153,7 @@ const data: MyData = {
         },
       ],
       technologies: [Skill.REACT, Skill.NEXT, Skill.TYPESCRIPT, Skill.SASS],
+      image: "/projects/wult_website.png",
     },
     {
       id: 2,
@@ -166,6 +168,7 @@ const data: MyData = {
         },
       ],
       technologies: [Skill.REACT, Skill.NEXT, Skill.TYPESCRIPT, Skill.SASS],
+      image: "/projects/wult_platform.png",
     },
     {
       id: 3,
@@ -180,6 +183,7 @@ const data: MyData = {
         },
       ],
       technologies: [Skill.REACTNATIVE, Skill.TYPESCRIPT, Skill.CSS, Skill.SQL],
+      image: "/projects/boardgamee_2.png",
     },
   ],
 }

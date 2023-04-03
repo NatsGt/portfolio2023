@@ -46,7 +46,7 @@ type ProjectLink = {
   link: string
 }
 
-type Project = {
+export type Project = {
   id: number
   title: string
   description: string

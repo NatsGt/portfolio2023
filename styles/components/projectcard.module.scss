@@ -38,10 +38,16 @@
       font-weight: 300;
       font-size: 20px;
       line-height: 23px;
+      margin-bottom: 0.5rem;
     }
     .link {
       display: flex;
       align-items: center;
+      gap: 0.25rem;
+      &:hover {
+        cursor: pointer;
+        color: $pink-400;
+      }
     }
     .technologies {
       h4 {

@@ -12,9 +12,10 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
       <div>
         <h2 className="basicSubtitle">Projects</h2>
         <div>
-          {data.map((item) => (
+          {/* {data.map((item) => (
             <ProjectCard data={item} key={item.id} />
-          ))}
+          ))} */}
+          <ProjectCard data={data[0]} />
         </div>
       </div>
     </PageContainer>

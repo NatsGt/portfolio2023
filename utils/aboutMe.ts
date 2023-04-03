@@ -1,3 +1,5 @@
+import { link } from "fs"
+
 export enum ContactName {
   GITHUB = "github",
   LINKEDIN = "linkedin",
@@ -16,14 +18,14 @@ export type Skills = {
   name: string
 }
 
-type Projects = {
-  id: number
-  title: string
-  description: string
-  img: string
-  code: string
-  preview: string
-}
+// type Projects = {
+//   id: number
+//   title: string
+//   description: string
+//   img: string
+//   code: string
+//   preview: string
+// }
 
 type MyData = {
   name: string
@@ -35,7 +37,22 @@ type MyData = {
   contact: Contacts[]
   skills: Skills[]
   projectsSummary: string
-  projects: Projects[]
+  projects: Project[]
+}
+
+type ProjectLink = {
+  id: number
+  type: "url" | "repository"
+  link: string
+}
+
+type Project = {
+  id: number
+  title: string
+  description: string
+  links: ProjectLink[]
+  technologies: Skill[]
+  inProgress?: boolean
 }
 
 export enum Skill {
@@ -49,6 +66,7 @@ export enum Skill {
   GITHUB = "github",
   SQL = "sql",
   NEXT = "next",
+  REACTNATIVE = "react native",
 }
 
 const data: MyData = {
@@ -123,31 +141,76 @@ const data: MyData = {
   projects: [
     {
       id: 1,
-      title: "Clone Website",
+      title: "Wult's website",
       description:
-        "This project was based on pure HTML and CSS. It's a responsive website with diverse image positioning, buttons, a form, and other components that are styled without any library. The design and original template can be found here.",
-      img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      code: "https://github.com/NatsGt/clone-travel-app",
-      preview: "https://natsgt.github.io/clone-travel-app/",
+        "Built responsive website using Next.js, TypeScript, and a CMS. Optimized for performance, scalability, and user experience. Creators can manipulate themes and templates from CMS, and publish real-time updates. Monitored website performance with analytics tools, making sure it was optimized for search engines",
+      links: [
+        {
+          id: 1,
+          type: "url",
+          link: "https://wult.io/",
+        },
+      ],
+      technologies: [Skill.REACT, Skill.NEXT, Skill.TYPESCRIPT, Skill.SASS],
     },
     {
       id: 2,
-      title: "GitHub Search",
+      title: "Wult's platform",
       description:
-        "This is a pretty basic search website for GitHub users based on React. It fetches data from a GitHub API, passes it through components using React hooks, and handles errors that the API may throw.",
-      img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      code: "https://github.com/NatsGt/hyf-homework/tree/master/react/week4",
-      preview: "https://i.imgur.com/1A8ZJqI.gif",
+        "This tool has a data mapping functionality to create a full compliance index of all data, including data structure, segmentation, and more. Utilized React to create a dynamic user interface, and used Sass to simplify the styling process. Utilized Next.js to enable server-side rendering, automatic code splitting, and optimized performance. Used third-party libraries for UI components (Antd), graphs (Recharts), API fetching and updtaing (ReactQuery), and more.",
+      links: [
+        {
+          id: 1,
+          type: "url",
+          link: "https://wult.io/feature/essential-data-mapping",
+        },
+      ],
+      technologies: [Skill.REACT, Skill.NEXT, Skill.TYPESCRIPT, Skill.SASS],
     },
     {
       id: 3,
-      title: "MealSharing App",
+      title: "Boardgamee",
       description:
-        "This project consists on the use of several tools, such as React, NodeJs, MySql, KnexJs, and Bootstrap. It's a project that uses CRUD concepts, fetching information from a database, and using React-Bootstrap for the styling.",
-      img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      code: "https://github.com/NatsGt/meal-sharing",
-      preview: "https://github.com/NatsGt/meal-sharing",
+        "Mobile app for boardgames saving using React Native, integrating sql database to store games and users. Optimized for performance and compatibility with both iOS and Android devices. Implemented third-party libraries and APIs for games data (Atlas API), user authentication (Firebase), and user experience features (eg. push notifications)",
+      links: [
+        {
+          id: 1,
+          type: "repository",
+          link: "https://github.com/radoales/boardgamee",
+        },
+      ],
+      technologies: [Skill.REACTNATIVE, Skill.TYPESCRIPT, Skill.CSS, Skill.SQL],
     },
   ],
 }
+
+const oldProjects = [
+  {
+    id: 1,
+    title: "Clone Website",
+    description:
+      "This project was based on pure HTML and CSS. It's a responsive website with diverse image positioning, buttons, a form, and other components that are styled without any library. The design and original template can be found here.",
+    img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    code: "https://github.com/NatsGt/clone-travel-app",
+    preview: "https://natsgt.github.io/clone-travel-app/",
+  },
+  {
+    id: 2,
+    title: "GitHub Search",
+    description:
+      "This is a pretty basic search website for GitHub users based on React. It fetches data from a GitHub API, passes it through components using React hooks, and handles errors that the API may throw.",
+    img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    code: "https://github.com/NatsGt/hyf-homework/tree/master/react/week4",
+    preview: "https://i.imgur.com/1A8ZJqI.gif",
+  },
+  {
+    id: 3,
+    title: "MealSharing App",
+    description:
+      "This project consists on the use of several tools, such as React, NodeJs, MySql, KnexJs, and Bootstrap. It's a project that uses CRUD concepts, fetching information from a database, and using React-Bootstrap for the styling.",
+    img: "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    code: "https://github.com/NatsGt/meal-sharing",
+    preview: "https://github.com/NatsGt/meal-sharing",
+  },
+]
 export default data

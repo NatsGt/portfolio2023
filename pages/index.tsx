@@ -21,7 +21,7 @@ export default function Home() {
         <FrontPage description={data.briefDescription} contact={data.contact} />
         <About description={data.aboutMe} />
         <Skills description={data.skillsDescription} skills={data.skills} />
-        <Projects />
+        <Projects data={data.projects} />
         <Contact contacts={data.contact} description={data.contactSummary} />
         <ContactSticky contacts={data.contact} />
       </main>

@@ -32,7 +32,7 @@
       font-weight: 700;
       font-size: 48px;
       line-height: 59px;
-      color: $pink-200;
+      color: $pink-100;
     }
     p {
       font-weight: 300;
@@ -42,11 +42,15 @@
     }
     .link {
       display: flex;
-      align-items: center;
-      gap: 0.25rem;
+      gap: 1rem;
       &:hover {
         cursor: pointer;
         color: $pink-400;
+      }
+      .oneLink {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
       }
     }
     .technologies {
@@ -55,6 +59,11 @@
         font-size: 20px;
         line-height: 23px;
         margin-bottom: 1rem;
+        color: $pink-100;
+      }
+      .list {
+        display: flex;
+        gap: 1rem;
       }
       .technology {
         display: flex;

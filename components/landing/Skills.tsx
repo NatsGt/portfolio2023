@@ -14,7 +14,9 @@ const Skills: React.FC<SkillsProps> = ({ description, skills }) => {
     <PageContainer id="skills" background="dark">
       <div className={styles.skills}>
         <h2 className="basicSubtitle">Skills</h2>
-        <div className={styles.description}>{description}</div>
+        <div className={`${styles.description} basicDescription`}>
+          {description}
+        </div>
         <div className={styles.skillsGrid}>
           {skills.map((item) => (
             <div key={item.id} className={styles.oneSkill}>

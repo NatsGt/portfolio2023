@@ -47,6 +47,8 @@ export const skillIcon = (skill: string): React.ElementType => {
       return IconSass
     case Skill.SQL:
       return IconBxlPostgresql
+    case Skill.REACTNATIVE:
+      return IconReact
     default:
       return IconDatadog
   }

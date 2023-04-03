@@ -1,12 +1,21 @@
+import { Project } from "@/utils/aboutMe"
 import PageContainer from "../PageContainer"
 import ProjectCard from "./Project"
 
-const Projects = () => {
+interface ProjectsProps {
+  data: Project[]
+}
+
+const Projects: React.FC<ProjectsProps> = ({ data }) => {
   return (
     <PageContainer background="light" id="projects">
       <div>
         <h2 className="basicSubtitle">Projects</h2>
-        <ProjectCard />
+        <div>
+          {data.map((item) => (
+            <ProjectCard data={item} key={item.id} />
+          ))}
+        </div>
       </div>
     </PageContainer>
   )

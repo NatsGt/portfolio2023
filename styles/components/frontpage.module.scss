@@ -11,7 +11,7 @@
   gap: 0.5rem;
   h1,
   h2 {
-    font-family: $font-montserrat;
+    font-family: var(--montserrat-font);
     color: white;
     font-weight: 900;
   }
@@ -21,13 +21,13 @@
   h2 {
     font-size: 56px;
     strong {
-      font-family: $font-cursive;
+      font-family: var(--dancing-script-font);
       color: $pink-100;
       font-size: 90px;
     }
   }
   div {
-    font-family: $font-work;
+    font-family: var(--work-sans-font);
     font-size: 20px;
     font-weight: 300;
   }

@@ -12,12 +12,12 @@ a {
 
 .basicSubtitle {
   color: $pink-100;
-  font-family: $font-montserrat;
+  font-family: var(--montserrat-font);
   font-size: 50px;
 }
 
 .basicDescription {
-  font-family: $font-work;
+  font-family: var(--work-sans-font);
   font-size: 20px;
   font-weight: 300;
   line-height: 27px;

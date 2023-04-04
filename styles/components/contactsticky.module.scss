@@ -27,6 +27,6 @@
 
 @include for-mobile {
   .contactSticky {
-    width: 15vw;
+    display: none;
   }
 }

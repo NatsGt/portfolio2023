@@ -10,7 +10,11 @@ interface ContactDataProps {
 const ContactData: React.FC<ContactDataProps> = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false)
   return (
-    <div onMouseEnter={() => setIsHovered(true)} className={styles.contactdata}>
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      className={styles.contactdata}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <ContactIcon item={item} />
       {isHovered && (
         <a

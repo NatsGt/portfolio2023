@@ -24,3 +24,9 @@
     margin: 0 auto;
   }
 }
+
+@include for-mobile {
+  .contactSticky {
+    width: 15vw;
+  }
+}

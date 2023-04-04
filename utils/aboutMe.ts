@@ -150,7 +150,7 @@ const data: MyData = {
       id: 2,
       title: "Wult's platform",
       description:
-        "This tool has a data mapping functionality to create a full compliance index of all data, including data structure, segmentation, and more. Utilized React to create a dynamic user interface, and used Sass to simplify the styling process. Utilized Next.js to enable server-side rendering, automatic code splitting, and optimized performance. Used third-party libraries for UI components (Antd), graphs (Recharts), API fetching and updtaing (ReactQuery), and more.",
+        "This tool has a data mapping functionality to create a full compliance index of all data, including data structure, segmentation, and more. Used React to create a dynamic user interface, and used Sass to simplify the styling process. Used Next.js to enable server-side rendering, automatic code splitting, and optimized performance. Worked with third-party libraries for UI components (Antd), graphs (Recharts), API fetching and updtaing (ReactQuery), and more.",
       links: [
         {
           id: 1,

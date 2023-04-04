@@ -37,3 +37,10 @@
   display: flex;
   gap: 1rem;
 }
+
+@include for-mobile {
+  .frontpage {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

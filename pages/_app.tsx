@@ -4,14 +4,14 @@ import type { AppProps } from "next/app"
 import { Work_Sans, Montserrat, Dancing_Script } from "next/font/google"
 
 const workSans = Work_Sans({
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "900"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--work-sans-font",
 })
 
 const montserrat = Montserrat({
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "900"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--montserrat-font",
@@ -26,12 +26,12 @@ const dancingScript = Dancing_Script({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <div
-        className={`${workSans.variable} ${montserrat.variable} ${dancingScript.variable}`}
-      >
+    <div
+      className={`${workSans.variable} ${montserrat.variable} ${dancingScript.variable}`}
+    >
+      <Layout>
         <Component {...pageProps} />
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   )
 }

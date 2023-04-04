@@ -20,7 +20,7 @@ const Skills: React.FC<SkillsProps> = ({ description, skills }) => {
         <div className={styles.skillsGrid}>
           {skills.map((item) => (
             <div key={item.id} className={styles.oneSkill}>
-              <Icon icon={skillIcon(item.name)} color="white" />
+              <Icon icon={skillIcon(item.name)} color="white" size={32} />
               {item.name}
             </div>
           ))}

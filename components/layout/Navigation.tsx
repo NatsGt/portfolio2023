@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const Navigation = () => {
   return (
-    <nav className={styles.navigation}>
+    <nav className={`${styles.navigation} ${styles.desktopOnly}`}>
       <ul className={styles.linksContainer}>
         <li className={styles.links}>
           <Link href="#about" legacyBehavior>

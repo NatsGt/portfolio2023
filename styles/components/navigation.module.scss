@@ -33,3 +33,9 @@
     }
   }
 }
+
+@include for-mobile {
+  .desktopOnly {
+    display: none;
+  }
+}

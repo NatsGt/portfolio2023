@@ -33,13 +33,13 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         className={`${styles.carousel__button} ${styles.left}`}
         onClick={handlePrevious}
       >
-        <Icon icon={IconArrowLeft} />
+        <Icon icon={IconArrowLeft} color={styles.pink_600} />
       </button>
       <button
         className={`${styles.carousel__button} ${styles.right}`}
         onClick={handleNext}
       >
-        <Icon icon={IconArrowRight} />
+        <Icon icon={IconArrowRight} color={styles.pink_600} />
       </button>
     </div>
   )

@@ -18,15 +18,6 @@ export type Skills = {
   name: string
 }
 
-// type Projects = {
-//   id: number
-//   title: string
-//   description: string
-//   img: string
-//   code: string
-//   preview: string
-// }
-
 type MyData = {
   name: string
   location: string

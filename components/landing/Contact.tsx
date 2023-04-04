@@ -23,7 +23,10 @@ const Contact: React.FC<ContactProps> = ({ description, contacts }) => {
             />
           </div>
           <div className={styles.dataContainer}>
-            <p className="basicDescription">{description}</p>
+            <p className="basicDescription">
+              <strong>Hey! </strong>
+              {description}
+            </p>
             <div className={styles.contactIcons}>
               {contacts.map((item) => {
                 return <ContactData key={item.id} item={item} />

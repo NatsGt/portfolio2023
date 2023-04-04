@@ -2,7 +2,7 @@
 
 .cardContainer {
   position: relative;
-  height: 35vh;
+  height: fit-content;
   width: 70vw;
   background-color: $blue-900;
   border: 1px solid $blue-900;
@@ -11,7 +11,7 @@
   padding: 1rem 2rem;
   .imageContainer {
     position: absolute;
-    height: 30vh;
+    width: 30vw;
     aspect-ratio: 2;
     top: -25%;
     right: -2.5%;

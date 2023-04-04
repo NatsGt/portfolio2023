@@ -44,3 +44,13 @@
     }
   }
 }
+
+@include for-mobile {
+  .carousel {
+    &__container {
+      &__item {
+        height: fit-content;
+      }
+    }
+  }
+}

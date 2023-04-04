@@ -73,3 +73,24 @@
     }
   }
 }
+
+@include for-mobile {
+  .cardContainer {
+    height: fit-content;
+    padding: 1rem;
+    .imageContainer {
+      display: none;
+    }
+    .projectData {
+      padding: 1rem;
+      width: 100%;
+      &__text {
+        width: 100%;
+      }
+    }
+    .list {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}

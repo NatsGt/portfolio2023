@@ -12,3 +12,9 @@
     color: white;
   }
 }
+
+@include for-mobile {
+  .about {
+    padding: 3rem 1rem;
+  }
+}

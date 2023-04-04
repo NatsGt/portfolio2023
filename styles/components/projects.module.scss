@@ -1,5 +1,13 @@
 @use "../variables/" as *;
 
 .projectContainer {
-  margin-top: 1rem;
+  &__projects {
+    margin-top: 1rem;
+  }
+}
+
+@include for-mobile {
+  .projectContainer {
+    padding: 3rem 1rem;
+  }
 }

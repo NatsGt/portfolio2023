@@ -1,0 +1,52 @@
+@use "../variables/" as *;
+
+.contactdata {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  a:first-of-type {
+    animation: neon 1s ease infinite;
+  }
+  a.contactdata__text {
+    display: block;
+    height: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-family: var(--work-sans-font);
+    color: $pink-50;
+    font-size: 20px;
+    &:hover {
+      animation: textneon 1s ease infinite;
+    }
+    //animation: textneon 1s ease infinite;
+  }
+}
+
+@keyframes textneon {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8,
+      0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+    color: #f5efcb;
+  }
+  50% {
+    text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b,
+      0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+    color: #eda0d3;
+  }
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    box-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8,
+      0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+    border-color: #f5efcb;
+  }
+  50% {
+    box-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b,
+      0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+    border-color: #eda0d3;
+  }
+}

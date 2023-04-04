@@ -2,7 +2,7 @@ import Image from "next/image"
 import PageContainer from "../PageContainer"
 import { Contacts } from "@/utils/aboutMe"
 import styles from "@/styles/components/contact.module.scss"
-import ContactIcon from "../ContactIcon"
+import ContactData from "./ContactData"
 
 type ContactProps = {
   description: string
@@ -23,10 +23,13 @@ const Contact: React.FC<ContactProps> = ({ description, contacts }) => {
             />
           </div>
           <div className={styles.dataContainer}>
-            <p className="basicDescription">{description}</p>
+            <p className="basicDescription">
+              <strong>Hey! </strong>
+              {description}
+            </p>
             <div className={styles.contactIcons}>
               {contacts.map((item) => {
-                return <ContactIcon key={item.id} item={item} />
+                return <ContactData key={item.id} item={item} />
               })}
             </div>
           </div>

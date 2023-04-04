@@ -18,15 +18,6 @@ export type Skills = {
   name: string
 }
 
-// type Projects = {
-//   id: number
-//   title: string
-//   description: string
-//   img: string
-//   code: string
-//   preview: string
-// }
-
 type MyData = {
   name: string
   location: string
@@ -80,7 +71,7 @@ const data: MyData = {
   skillsDescription:
     "I started as a self-taught developer on several online platforms and built some basic projects (cloning responsive websites). Afterward, I got into the Hack Your Future program where I got my Front End Developer certificate. Since then, I’ve been working with projects based on Javascript, NodeJs, React, MySql, KnexJs, Git, Sass, Redux, and other several libraries. I'm always looking for new projects that help me dig more into these technologies and I'm looking forward to new and challenges.",
   contactSummary:
-    "Hey! you just met me, and this is crazy, so here's my contact, so write me... maybe?",
+    "you just met me, and this is crazy, but here's my contact, so write me... maybe?",
   contact: [
     {
       id: 1,
